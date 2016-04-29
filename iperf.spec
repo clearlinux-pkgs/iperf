@@ -4,7 +4,7 @@
 #
 Name     : iperf
 Version  : 2.0.5
-Release  : 1
+Release  : 2
 URL      : http://downloads.sourceforge.net/project/iperf/iperf-2.0.5.tar.gz
 Source0  : http://downloads.sourceforge.net/project/iperf/iperf-2.0.5.tar.gz
 Summary  : No detailed summary available
