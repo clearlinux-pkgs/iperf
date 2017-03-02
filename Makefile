@@ -1,5 +1,5 @@
 PKG_NAME := iperf
-URL := http://downloads.sourceforge.net/project/iperf/iperf-2.0.5.tar.gz
-ARCHIVES :=
+URL := https://github.com/esnet/iperf/archive/3.1.6.tar.gz
+
 
 include ../common/Makefile.common
