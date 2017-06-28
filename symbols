@@ -1,3 +1,5 @@
+libiperf.so.0:Base64Decode
+libiperf.so.0:Base64Encode
 libiperf.so.0:Nread
 libiperf.so.0:Nsendfile
 libiperf.so.0:Nwrite
@@ -64,9 +66,15 @@ libiperf.so.0:cJSON_SetNumberHelper
 libiperf.so.0:cJSON_Version
 libiperf.so.0:cJSON_free
 libiperf.so.0:cJSON_malloc
+libiperf.so.0:calcDecodeLength
+libiperf.so.0:check_authentication
 libiperf.so.0:connect_msg
 libiperf.so.0:cpu_util
+libiperf.so.0:decode_auth_setting
+libiperf.so.0:decrypt_rsa_message
 libiperf.so.0:delay
+libiperf.so.0:encode_auth_setting
+libiperf.so.0:encrypt_rsa_message
 libiperf.so.0:get_optional_features
 libiperf.so.0:get_pmtu
 libiperf.so.0:get_protocol
@@ -206,6 +214,8 @@ libiperf.so.0:iperf_udp_recv
 libiperf.so.0:iperf_udp_send
 libiperf.so.0:iptos2str
 libiperf.so.0:is_closed
+libiperf.so.0:load_key
+libiperf.so.0:load_pubkey
 libiperf.so.0:make_cookie
 libiperf.so.0:netannounce
 libiperf.so.0:netdial
@@ -218,6 +228,10 @@ libiperf.so.0:set_protocol
 libiperf.so.0:set_tcp_options
 libiperf.so.0:set_tcp_windowsize
 libiperf.so.0:setnonblocking
+libiperf.so.0:sha256
+libiperf.so.0:test_is_authorized
+libiperf.so.0:test_load_private_key
+libiperf.so.0:test_load_pubkey
 libiperf.so.0:timeout_connect
 libiperf.so.0:timeval_diff
 libiperf.so.0:timeval_equals
