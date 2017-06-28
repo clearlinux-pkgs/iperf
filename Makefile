@@ -1,5 +1,5 @@
 PKG_NAME := iperf
-URL := http://github.com/esnet/iperf/archive/3.1.7.tar.gz
+URL := https://github.com/esnet/iperf/archive/3.2.tar.gz
 
 
 include ../common/Makefile.common

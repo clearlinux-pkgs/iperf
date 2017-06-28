@@ -1,0 +1,9 @@
+Configure miss: netinet/sctp.h
+Configure miss: openssl/ssl.h in /usr/local/ssl
+Configure miss: openssl/ssl.h in /usr/lib/ssl
+Configure miss: openssl/ssl.h in /usr/ssl
+Configure miss: openssl/ssl.h in /usr/pkg
+Configure miss: openssl/ssl.h in /usr/local
+Configure miss: openssl/ssl.h in /usr
+Configure miss: whether compiling and linking against OpenSSL works
+Configure miss: cpuset_setaffinity
