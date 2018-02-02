@@ -4,7 +4,7 @@
 #
 Name     : iperf
 Version  : 3.3
-Release  : 11
+Release  : 12
 URL      : https://github.com/esnet/iperf/archive/3.3.tar.gz
 Source0  : https://github.com/esnet/iperf/archive/3.3.tar.gz
 Summary  : No detailed summary available
