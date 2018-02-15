@@ -1,2 +1,3 @@
 Configure miss: netinet/sctp.h
 Configure miss: cpuset_setaffinity
+Configure miss: SetProcessAffinityMask

@@ -72,7 +72,6 @@ libiperf.so.0:connect_msg
 libiperf.so.0:cpu_util
 libiperf.so.0:decode_auth_setting
 libiperf.so.0:decrypt_rsa_message
-libiperf.so.0:delay
 libiperf.so.0:encode_auth_setting
 libiperf.so.0:encrypt_rsa_message
 libiperf.so.0:get_optional_features
@@ -82,9 +81,7 @@ libiperf.so.0:get_rtt
 libiperf.so.0:get_rttvar
 libiperf.so.0:get_snd_cwnd
 libiperf.so.0:get_system_info
-libiperf.so.0:get_tcp_windowsize
 libiperf.so.0:get_total_retransmits
-libiperf.so.0:getsock_tcp_mss
 libiperf.so.0:getsockdomain
 libiperf.so.0:has_sendfile
 libiperf.so.0:has_tcpinfo
@@ -204,7 +201,6 @@ libiperf.so.0:iperf_tcp_connect
 libiperf.so.0:iperf_tcp_listen
 libiperf.so.0:iperf_tcp_recv
 libiperf.so.0:iperf_tcp_send
-libiperf.so.0:iperf_test_reset
 libiperf.so.0:iperf_udp_accept
 libiperf.so.0:iperf_udp_buffercheck
 libiperf.so.0:iperf_udp_connect
@@ -225,8 +221,6 @@ libiperf.so.0:protocol_new
 libiperf.so.0:readentropy
 libiperf.so.0:save_tcpinfo
 libiperf.so.0:set_protocol
-libiperf.so.0:set_tcp_options
-libiperf.so.0:set_tcp_windowsize
 libiperf.so.0:setnonblocking
 libiperf.so.0:sha256
 libiperf.so.0:test_is_authorized
