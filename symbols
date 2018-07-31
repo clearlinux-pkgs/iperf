@@ -74,6 +74,7 @@ libiperf.so.0:decode_auth_setting
 libiperf.so.0:decrypt_rsa_message
 libiperf.so.0:encode_auth_setting
 libiperf.so.0:encrypt_rsa_message
+libiperf.so.0:fill_with_repeating_pattern
 libiperf.so.0:get_optional_features
 libiperf.so.0:get_pmtu
 libiperf.so.0:get_protocol
@@ -112,6 +113,7 @@ libiperf.so.0:iperf_get_test_bind_address
 libiperf.so.0:iperf_get_test_blksize
 libiperf.so.0:iperf_get_test_burst
 libiperf.so.0:iperf_get_test_duration
+libiperf.so.0:iperf_get_test_extra_data
 libiperf.so.0:iperf_get_test_fqrate
 libiperf.so.0:iperf_get_test_get_server_output
 libiperf.so.0:iperf_get_test_json_output
@@ -130,6 +132,7 @@ libiperf.so.0:iperf_get_test_server_port
 libiperf.so.0:iperf_get_test_socket_bufsize
 libiperf.so.0:iperf_get_test_stats_interval
 libiperf.so.0:iperf_get_test_template
+libiperf.so.0:iperf_get_test_tos
 libiperf.so.0:iperf_get_test_udp_counters_64bit
 libiperf.so.0:iperf_get_test_unit_format
 libiperf.so.0:iperf_get_test_zerocopy
@@ -172,7 +175,11 @@ libiperf.so.0:iperf_set_send_state
 libiperf.so.0:iperf_set_test_bind_address
 libiperf.so.0:iperf_set_test_blksize
 libiperf.so.0:iperf_set_test_burst
+libiperf.so.0:iperf_set_test_client_password
+libiperf.so.0:iperf_set_test_client_rsa_pubkey
+libiperf.so.0:iperf_set_test_client_username
 libiperf.so.0:iperf_set_test_duration
+libiperf.so.0:iperf_set_test_extra_data
 libiperf.so.0:iperf_set_test_fqrate
 libiperf.so.0:iperf_set_test_get_server_output
 libiperf.so.0:iperf_set_test_json_output
@@ -189,6 +196,7 @@ libiperf.so.0:iperf_set_test_socket_bufsize
 libiperf.so.0:iperf_set_test_state
 libiperf.so.0:iperf_set_test_stats_interval
 libiperf.so.0:iperf_set_test_template
+libiperf.so.0:iperf_set_test_tos
 libiperf.so.0:iperf_set_test_udp_counters_64bit
 libiperf.so.0:iperf_set_test_unit_format
 libiperf.so.0:iperf_set_test_zerocopy
@@ -210,8 +218,9 @@ libiperf.so.0:iperf_udp_recv
 libiperf.so.0:iperf_udp_send
 libiperf.so.0:iptos2str
 libiperf.so.0:is_closed
-libiperf.so.0:load_key
-libiperf.so.0:load_pubkey
+libiperf.so.0:load_privkey_from_file
+libiperf.so.0:load_pubkey_from_base64
+libiperf.so.0:load_pubkey_from_file
 libiperf.so.0:make_cookie
 libiperf.so.0:netannounce
 libiperf.so.0:netdial
@@ -224,8 +233,8 @@ libiperf.so.0:set_protocol
 libiperf.so.0:setnonblocking
 libiperf.so.0:sha256
 libiperf.so.0:test_is_authorized
-libiperf.so.0:test_load_private_key
-libiperf.so.0:test_load_pubkey
+libiperf.so.0:test_load_private_key_from_file
+libiperf.so.0:test_load_pubkey_from_file
 libiperf.so.0:timeout_connect
 libiperf.so.0:timeval_diff
 libiperf.so.0:timeval_equals
