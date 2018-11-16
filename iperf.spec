@@ -4,16 +4,16 @@
 #
 Name     : iperf
 Version  : 3.6
-Release  : 16
+Release  : 17
 URL      : https://github.com/esnet/iperf/archive/3.6.tar.gz
 Source0  : https://github.com/esnet/iperf/archive/3.6.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
-Requires: iperf-bin
-Requires: iperf-lib
-Requires: iperf-license
-Requires: iperf-man
+Requires: iperf-bin = %{version}-%{release}
+Requires: iperf-lib = %{version}-%{release}
+Requires: iperf-license = %{version}-%{release}
+Requires: iperf-man = %{version}-%{release}
 BuildRequires : openssl-dev
 
 %description
@@ -23,8 +23,8 @@ iperf3:  A TCP, UDP, and SCTP network bandwidth measurement tool
 %package bin
 Summary: bin components for the iperf package.
 Group: Binaries
-Requires: iperf-license
-Requires: iperf-man
+Requires: iperf-license = %{version}-%{release}
+Requires: iperf-man = %{version}-%{release}
 
 %description bin
 bin components for the iperf package.
@@ -33,9 +33,9 @@ bin components for the iperf package.
 %package dev
 Summary: dev components for the iperf package.
 Group: Development
-Requires: iperf-lib
-Requires: iperf-bin
-Provides: iperf-devel
+Requires: iperf-lib = %{version}-%{release}
+Requires: iperf-bin = %{version}-%{release}
+Provides: iperf-devel = %{version}-%{release}
 
 %description dev
 dev components for the iperf package.
@@ -44,7 +44,7 @@ dev components for the iperf package.
 %package lib
 Summary: lib components for the iperf package.
 Group: Libraries
-Requires: iperf-license
+Requires: iperf-license = %{version}-%{release}
 
 %description lib
 lib components for the iperf package.
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533059255
+export SOURCE_DATE_EPOCH=1542398908
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -86,11 +86,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1533059255
+export SOURCE_DATE_EPOCH=1542398908
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/iperf
-cp LICENSE %{buildroot}/usr/share/doc/iperf/LICENSE
-cp docs/_esnet/LICENSE %{buildroot}/usr/share/doc/iperf/docs__esnet_LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/iperf
+cp LICENSE %{buildroot}/usr/share/package-licenses/iperf/LICENSE
+cp docs/_esnet/LICENSE %{buildroot}/usr/share/package-licenses/iperf/docs__esnet_LICENSE
 %make_install
 
 %files
@@ -112,10 +112,10 @@ cp docs/_esnet/LICENSE %{buildroot}/usr/share/doc/iperf/docs__esnet_LICENSE
 /usr/lib64/libiperf.so.0.0.0
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/iperf/LICENSE
-/usr/share/doc/iperf/docs__esnet_LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/iperf/LICENSE
+/usr/share/package-licenses/iperf/docs__esnet_LICENSE
 
 %files man
-%defattr(-,root,root,-)
+%defattr(0644,root,root,0755)
 /usr/share/man/man1/iperf3.1
