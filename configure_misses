@@ -1,3 +1,5 @@
+Configure miss: IP_DONTFRAG socket option
+Configure miss: IP_DONTFRAGMENT socket option
 Configure miss: SetProcessAffinityMask
 Configure miss: cpuset_setaffinity
 Configure miss: netinet/sctp.h
