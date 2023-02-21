@@ -115,6 +115,7 @@ libiperf.so.0:iperf_check_total_rate
 libiperf.so.0:iperf_clearaffinity
 libiperf.so.0:iperf_client_end
 libiperf.so.0:iperf_close_logfile
+libiperf.so.0:iperf_common_sockopts
 libiperf.so.0:iperf_connect
 libiperf.so.0:iperf_create_pidfile
 libiperf.so.0:iperf_create_send_timers
@@ -132,6 +133,8 @@ libiperf.so.0:iperf_get_control_socket
 libiperf.so.0:iperf_get_control_socket_mss
 libiperf.so.0:iperf_get_dont_fragment
 libiperf.so.0:iperf_get_iperf_version
+libiperf.so.0:iperf_get_mapped_v4
+libiperf.so.0:iperf_get_test_bidirectional
 libiperf.so.0:iperf_get_test_bind_address
 libiperf.so.0:iperf_get_test_bind_dev
 libiperf.so.0:iperf_get_test_bind_port
@@ -214,6 +217,7 @@ libiperf.so.0:iperf_send
 libiperf.so.0:iperf_server_listen
 libiperf.so.0:iperf_set_control_socket
 libiperf.so.0:iperf_set_dont_fragment
+libiperf.so.0:iperf_set_mapped_v4
 libiperf.so.0:iperf_set_send_state
 libiperf.so.0:iperf_set_test_bidirectional
 libiperf.so.0:iperf_set_test_bind_address
