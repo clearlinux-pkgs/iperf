@@ -1,6 +1,12 @@
 Configure miss: IP_DONTFRAG socket option
+Configure miss: IP_DONTFRAG socket option
+Configure miss: IP_DONTFRAGMENT socket option
 Configure miss: IP_DONTFRAGMENT socket option
 Configure miss: SetProcessAffinityMask
+Configure miss: SetProcessAffinityMask
+Configure miss: cpuset_setaffinity
 Configure miss: cpuset_setaffinity
 Configure miss: netinet/sctp.h
+Configure miss: netinet/sctp.h
+Configure miss: x86_64-generic-linux-gnu-file
 Configure miss: x86_64-generic-linux-gnu-file
