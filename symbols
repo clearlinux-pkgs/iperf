@@ -218,6 +218,10 @@ libiperf.so.0:iperf_server_listen
 libiperf.so.0:iperf_set_control_socket
 libiperf.so.0:iperf_set_dont_fragment
 libiperf.so.0:iperf_set_mapped_v4
+libiperf.so.0:iperf_set_on_new_stream_callback
+libiperf.so.0:iperf_set_on_test_connect_callback
+libiperf.so.0:iperf_set_on_test_finish_callback
+libiperf.so.0:iperf_set_on_test_start_callback
 libiperf.so.0:iperf_set_send_state
 libiperf.so.0:iperf_set_test_bidirectional
 libiperf.so.0:iperf_set_test_bind_address

@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : iperf
-Version  : 3.14
-Release  : 26
-URL      : https://github.com/esnet/iperf/archive/3.14/iperf-3.14.tar.gz
-Source0  : https://github.com/esnet/iperf/archive/3.14/iperf-3.14.tar.gz
+Version  : 3.15
+Release  : 27
+URL      : https://github.com/esnet/iperf/archive/3.15/iperf-3.15.tar.gz
+Source0  : https://github.com/esnet/iperf/archive/3.15/iperf-3.15.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -72,10 +72,10 @@ man components for the iperf package.
 
 
 %prep
-%setup -q -n iperf-3.14
-cd %{_builddir}/iperf-3.14
+%setup -q -n iperf-3.15
+cd %{_builddir}/iperf-3.15
 pushd ..
-cp -a iperf-3.14 buildavx2
+cp -a iperf-3.15 buildavx2
 popd
 
 %build
@@ -83,7 +83,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688999888
+export SOURCE_DATE_EPOCH=1694724092
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -115,7 +115,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1688999888
+export SOURCE_DATE_EPOCH=1694724092
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/iperf
 cp %{_builddir}/iperf-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/iperf/e5a1f89b6acd769bd4c769cabaaa7db3c039074a || :
