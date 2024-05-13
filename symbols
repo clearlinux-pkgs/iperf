@@ -155,6 +155,7 @@ libiperf.so.0:iperf_get_test_get_server_output
 libiperf.so.0:iperf_get_test_idle_timeout
 libiperf.so.0:iperf_get_test_json_output
 libiperf.so.0:iperf_get_test_json_output_string
+libiperf.so.0:iperf_get_test_json_stream
 libiperf.so.0:iperf_get_test_mss
 libiperf.so.0:iperf_get_test_no_delay
 libiperf.so.0:iperf_get_test_num_streams
@@ -247,6 +248,7 @@ libiperf.so.0:iperf_set_test_fqrate
 libiperf.so.0:iperf_set_test_get_server_output
 libiperf.so.0:iperf_set_test_idle_timeout
 libiperf.so.0:iperf_set_test_json_output
+libiperf.so.0:iperf_set_test_json_stream
 libiperf.so.0:iperf_set_test_logfile
 libiperf.so.0:iperf_set_test_mss
 libiperf.so.0:iperf_set_test_no_delay
