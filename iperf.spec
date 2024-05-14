@@ -6,13 +6,13 @@
 # autospec commit: 5905be9
 #
 Name     : iperf
-Version  : 3.17
-Release  : 30
-URL      : https://github.com/esnet/iperf/archive/3.17/iperf-3.17.tar.gz
-Source0  : https://github.com/esnet/iperf/archive/3.17/iperf-3.17.tar.gz
+Version  : 3.17.1
+Release  : 31
+URL      : https://github.com/esnet/iperf/archive/3.17.1/iperf-3.17.1.tar.gz
+Source0  : https://github.com/esnet/iperf/archive/3.17.1/iperf-3.17.1.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : BSD-3-Clause
+License  : BSD-3-Clause MIT
 Requires: iperf-bin = %{version}-%{release}
 Requires: iperf-lib = %{version}-%{release}
 Requires: iperf-license = %{version}-%{release}
@@ -75,10 +75,10 @@ man components for the iperf package.
 
 
 %prep
-%setup -q -n iperf-3.17
-cd %{_builddir}/iperf-3.17
+%setup -q -n iperf-3.17.1
+cd %{_builddir}/iperf-3.17.1
 pushd ..
-cp -a iperf-3.17 buildavx2
+cp -a iperf-3.17.1 buildavx2
 popd
 
 %build
@@ -86,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1715614005
+export SOURCE_DATE_EPOCH=1715697454
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -140,9 +140,10 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1715614005
+export SOURCE_DATE_EPOCH=1715697454
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/iperf
+cp %{_builddir}/iperf-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/iperf/facf5d2f0df5e3883df7f14d54bef01ac589cec6 || :
 cp %{_builddir}/iperf-%{version}/docs/_esnet/LICENSE %{buildroot}/usr/share/package-licenses/iperf/2710606f6db128e7cf24e84572811bbf177a4ce9 || :
 export GOAMD64=v2
 GOAMD64=v3
@@ -176,6 +177,7 @@ GOAMD64=v2
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/iperf/2710606f6db128e7cf24e84572811bbf177a4ce9
+/usr/share/package-licenses/iperf/facf5d2f0df5e3883df7f14d54bef01ac589cec6
 
 %files man
 %defattr(0644,root,root,0755)
